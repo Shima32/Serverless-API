@@ -1,0 +1,47 @@
+
+service: restapichallenge
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: go1.x
+  region: us-east-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+      Resource: 
+      - arn:aws:dynamodb:us-east-1:675174937919:table/DevicesList
+
+
+functions:
+  get:
+    handler: functions/get/get
+    events:
+      - httpApi:
+          path: /api/devices
+          method: get
+  post:
+    handler: functions/post/post
+    events:
+      - httpApi:
+          path: /api/devices
+          method: post
+
+
+resources:
+ Resources:
+   DevicesList:
+     Type: AWS::DynamoDB::Table
+     Properties:
+        TableName: DevicesList
+        AttributeDefinitions:
+         - AttributeName: id
+           AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1            
+     
