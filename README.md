@@ -37,7 +37,7 @@ Note: If you are going to see the result of my implemention, there is my API URL
 
 ---
 ## Unit Testing:
-You Can run tests by go test in the get or the post directories.
+You Can run tests by using **go test** command in the get or the post directories.
 
 ```bash
 go test -v --cover
