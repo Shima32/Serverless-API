@@ -33,7 +33,7 @@ and you can see the result.
 ### GET
 Use your API <API URL> in the Postman endpoint bar and select GET from the list of request types. Click on the Params tab, enter key (id) and value (id22) and press Send. You can see all information that you posted about the device with id22.
 
-Note: If you are going to see the result of my implemention, there is my API URL: https://wjqtudixzd.execute-api.us-east-1.amazonaws.com/api/devices
+Note: If you are going to see the result of my implementation, there is my API URL: https://wjqtudixzd.execute-api.us-east-1.amazonaws.com/api/devices
 
 ---
 ## Unit Testing:
