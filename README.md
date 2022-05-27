@@ -4,16 +4,15 @@ There is a package called **functions** which contains two folders, **get** and 
 
 Each of them has its main function, test functions, and cover files. To get detailed information on the test coverage, you can check out the **cover.html**.
 
----
+
 ## Deploy:
 Install Serverless Framework and configure your AWS credentials on your machine. Now clone this repo into your Go Path Then cd into the project folder.
 run command below to construct the services.
-
+---
 ```bash
 serverless deploy
-
-
 ---
+
 ## Run:
 Once deployed and substituting your <API URL>, you can use Postman to interact with the resulting API, whose results can be confirmed in the DynamoDB console. 
 
