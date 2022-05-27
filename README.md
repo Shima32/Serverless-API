@@ -8,10 +8,10 @@ Each of them has its main function, test functions, and cover files. To get deta
 ## Deploy:
 Install Serverless Framework and configure your AWS credentials on your machine. Now clone this repo into your Go Path Then cd into the project folder.
 run command below to construct the services.
----
+
 ```bash
 serverless deploy
----
+
 
 ## Run:
 Once deployed and substituting your <API URL>, you can use Postman to interact with the resulting API, whose results can be confirmed in the DynamoDB console. 
@@ -32,9 +32,10 @@ and you can see the result.
 ###GET
 Use your API <API URL> in the Postman endpoint bar and select GET from the list of request types. Click on the Params tab, enter key (id) and value (id22) and press Send. You can see all information that you posted about the device with id22.
 
----
+
 ## Unit Testing:
 You Can run tests by make test or go test in the get or the post directories.
 
 ```bash
 go test -v --cover
+
