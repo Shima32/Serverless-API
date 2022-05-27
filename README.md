@@ -1,4 +1,4 @@
-# Serverless-API
+RestApiChallenge
 # This is the ReadMe file for the serverless rest API challenge:
 There is a package called **functions** which contains two folders, **get** and **post**. 
 
@@ -30,7 +30,7 @@ for example:
  }
 and you can see the result.
 
-###GET
+### GET
 Use your API <API URL> in the Postman endpoint bar and select GET from the list of request types. Click on the Params tab, enter key (id) and value (id22) and press Send. You can see all information that you posted about the device with id22.
 
 ---
