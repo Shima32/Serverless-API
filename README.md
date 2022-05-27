@@ -15,7 +15,7 @@ serverless deploy
 ```
 ----
 ## Run:
-Once deployed and substituting your API-URL, you can use Postman to interact with the resulting API, whose results can be confirmed in the DynamoDB console. 
+Once deployed and substituting your API-URL, you can use Postman to interact with the resulting API, whose results can be confirmed in the DynamoDB console.You can have two kinds of requests post and get. 
 
 ### POST:
 Use your API <API URL> in the Postman endpoint bar and Select POST from the list of request types.click on the Body tab and click on raw and select format type as JSON. Now you can insert you request body and press Send.
@@ -37,9 +37,10 @@ Note: If you are going to see the result of my implemention, there is my API URL
 
 ---
 ## Unit Testing:
-You Can run tests by make test or go test in the get or the post directories.
+You Can run tests by go test in the get or the post directories.
 
 ```bash
 go test -v --cover
 ```
+Note: For unit testing please comment line 82 and uncomment lines 85 to 87 in the get function.
 ---
