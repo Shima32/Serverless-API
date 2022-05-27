@@ -19,6 +19,7 @@ Once deployed and substituting your <API URL>, you can use Postman to interact w
 
 ### POST:
 Use your API <API URL> in the Postman endpoint bar and Select POST from the list of request types.click on the Body tab and click on raw and select format type as JSON. Now you can insert you request body and press Send.
+
 for example:
  {
   "id": "id22",
