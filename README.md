@@ -1,4 +1,4 @@
-# SerVerless-API
+# RestApiChallenge
 
 # This is the ReadMe file for the serverless rest API challenge:
 There is a package called **functions** which contains two folders, **get** and **post**. 
@@ -12,7 +12,7 @@ run command below to construct the services.
 
 ```bash
 serverless deploy
-
+```
 
 # Run:
-Once deployed and substituting your <API URL>, you can use Postman to interact with the resulting API, whose results can be confirmed in the DynamoDB console.
+Once deployed and substituting your <API URL>, you can use Postman to interact with the resulting API, whose results can be confirmed in the DynamoDB console. 
