@@ -18,7 +18,7 @@ serverless deploy
 Once deploying and substituting your API-URL is done, you can use Postman to interact with the resulting API, whose results can be confirmed in the DynamoDB console.You can have two kinds of requests, post and get. 
 
 ### POST:
-Use your API-URL in the Postman endpoint bar and Select POST from the list of request types. click on the Body tab, click on raw, and select format type as JSON. Now you can insert your request body and press Send.
+Use your API-URL in the Postman endpoint bar and Select POST from the list of request types. Click on the Body tab, click on raw, and select format type as JSON. Now you can insert your request body and press Send.
 
 for example:\
  {\
