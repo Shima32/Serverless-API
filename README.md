@@ -15,10 +15,10 @@ serverless deploy
 ```
 ----
 ## Run:
-Once deployed and substituting your API-URL, you can use Postman to interact with the resulting API, whose results can be confirmed in the DynamoDB console.You can have two kinds of requests, post and get. 
+Once deploying and substituting your API-URL is done, you can use Postman to interact with the resulting API, whose results can be confirmed in the DynamoDB console.You can have two kinds of requests, post and get. 
 
 ### POST:
-Use your API <API URL> in the Postman endpoint bar and Select POST from the list of request types. click on the Body tab and click on raw and select format type as JSON. Now you can insert you request body and press Send.
+Use your API-URL in the Postman endpoint bar and Select POST from the list of request types. click on the Body tab, click on raw, and select format type as JSON. Now you can insert your request body and press Send.
 
 for example:\
  {\
@@ -28,16 +28,16 @@ for example:\
   "note": "Testing a sensor.",\
   "serial": "D0010245"\
  }\
-and you can see the result.
+and then you can see the result.
 
 ### GET
-Use your API <API URL> in the Postman endpoint bar and select GET from the list of request types. Click on the Params tab, enter key (id) and value (id22) and press Send. You can see all information that you posted about the device with id22.
+Use your API-URL in the Postman endpoint bar and select GET from the list of request types. Click on the Params tab, enter key (id) and value (id22) and press Send. You can see all information that you posted about the device with id22.
 
-Note: If you are going to see the result of my implementation, there is my API URL: https://wjqtudixzd.execute-api.us-east-1.amazonaws.com/api/devices
+Note: If you are going to see the result of my implementation, there is my API-URL: https://wjqtudixzd.execute-api.us-east-1.amazonaws.com/api/devices
 
 ---
 ## Unit Testing:
-You Can run tests by using *go test* command in the get or the post directories.
+You Can run tests by using the *go test* command in the get or the post directories.
 
 ```bash
 go test -v --cover
