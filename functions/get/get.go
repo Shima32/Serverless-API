@@ -79,12 +79,12 @@ func apiResponse(status int, body interface{}) (*events.APIGatewayProxyResponse,
 
 func handler(req events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
 
-	//id := req.QueryStringParameters["id"]
+	id := req.QueryStringParameters["id"]
 
 	//just for testing handler
-	var id_test Device
-	json.Unmarshal([]byte(req.Body), &id_test)
-	id := id_test.Id
+        //var id_test Device
+        //json.Unmarshal([]byte(req.Body), &id_test)
+        //id := id_test.Id
 	//just for testing handler
 
 	result, err := fetchDevice(id, tableName, dynaClient)
